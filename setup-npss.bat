@@ -1,0 +1,14 @@
+@echo off
+@SET _calldir=%CD%
+@SET EMI_TOP=..\..\..\..\NPSS.EMI.14.0.2
+@SET EMI_TOP=%EMI_TOP:"=%
+set NPSS_CONFIG=nt
+set NPSS_TOP=..\..\..\..\NPSS.nt.ver32_VC14_64
+set NPSS_DEV_TOP=%NPSS_TOP%\DLMdevkit
+set NPSS_TEST_TOP=%NPSS_TOP%\Test
+set MICODIR=%NPSS_TOP%
+set DCLOD_PATH=%NPSS_TOP%\DLMComponents\nt
+set PATH=%PATH%;%NPSS_TOP%\bin;%NPSS_TOP%\scripts
+@SET PATH=%EMI_TOP%\scripts\nt;%EMI_TOP%\scripts\AutoDoc;%PATH%
+@cd %_calldir%
+@SET _calldir=
